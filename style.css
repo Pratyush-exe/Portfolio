@@ -1,0 +1,622 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+div.sky img{
+    z-index: 2;
+    width: 100%;
+    opacity: 25%;
+    top:0;
+    left:-10%;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: rgb(0, 21, 39);
+}
+
+.name{
+    flex-basis: 20%;
+}
+
+.name img{
+    z-index: 6;
+    display:block;
+    top: 20%;
+    width: 30%;
+    position: absolute;
+    left: 18%;
+    animation: fade;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    transition: all .2s ease-in-out;
+    transition: 1s;
+}
+
+.aboutme img{
+    z-index: 4;
+    top:25%;
+    left:15%;
+    width: 40%;
+    position: absolute;
+    opacity: 0%;
+}
+
+.name_min img{
+    z-index: 4;
+    display:block;
+    top: -2%;
+    width: 15%;
+    position: absolute;
+    left: 1%;
+    opacity: 0%;
+}
+
+.projects img{
+    z-index: 4;
+    top: 50%;
+    left: 22.5%;
+    width: 20%;
+    position: absolute;
+    opacity: 0%;
+}
+
+.name img:hover{
+    transform: scale(1.1);
+}
+
+.moon{
+    flex-basis: 20%;
+}
+
+div.moon img{
+    width: 35%;
+    position: absolute;
+    z-index: 2;
+    top: 16.5%;
+    left: 48%;
+    animation: fade;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    transition: all .2s ease-in-out;
+    transition: 2s;
+}
+
+.moon img:hover{
+    transform: scale(1.05);
+}
+
+div.moonglaze img{
+    animation-delay: 2s;
+    width: 40%;
+    opacity: 60%;
+    position: absolute;
+    z-index: 1;
+    top: 11.5%;
+    left: 45%;
+    animation: glaze;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+}
+
+#c1{
+    width: 2.8%;
+    height: 5%;
+    position: absolute;
+    top:43%;
+    left:-2.4%;
+    z-index:4;
+    border-radius:30%;
+    background: white;
+}
+
+#c2{
+    width: 2.8%;
+    height: 5%;
+    position: absolute;
+    top:56%;
+    left:-2.4%;
+    z-index:4;
+    border-radius:30%;
+    background: white;    
+    animation-duration: 1s;
+}
+
+#c3{
+    width: 2.8%;
+    height: 5%;
+    position: absolute;
+    top:69.5%;
+    left:-2.4%;
+    z-index:4;
+    border-radius:30%;
+    background: white;
+}
+
+#c4{
+    width: 2.8%;
+    height: 5%;
+    position: absolute;
+    top:29.9%;
+    left:-2.4%;
+    z-index:4;
+    border-radius:30%;
+    background:white;
+}
+
+#Home{
+    width:4.7%;
+    z-index: 3;
+    opacity: 80%;
+    position: absolute;
+    cursor: pointer;
+    top: 29.9%;
+    left: 1%;
+    transition: all .2s ease-in-out;
+    transition: 1s;
+}
+#About{
+    width:6%;
+    z-index: 3;
+    opacity: 80%;
+    position: absolute;
+    cursor: pointer;
+    top: 43%;
+    left: 1%;
+}
+
+#Projects{
+    width:8%;
+    z-index: 3;
+    opacity: 80%;
+    position: absolute;
+    cursor: pointer;
+    top: 69.5%;
+    left: 1%;
+}
+
+#Skills{
+    width:6%;
+    z-index: 3;
+    opacity: 80%;
+    position: absolute;
+    cursor: pointer;
+    top: 56%;
+    left: 1%;
+}
+
+/*=============================================================================================*/
+.skills_ img:hover{
+    z-index: 4;
+    transform: scale(1.4);
+    /* transition: all 1s ease-in-out; */
+}
+
+#python{
+    z-index: 3;
+    width: 15%;
+    position:absolute;
+    left: 50%;
+    top: 10%;
+    opacity: 0%;
+    transition: 1s;
+}
+
+#cpp{
+    z-index: 3;
+    width: 9%;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0%;    
+    transition: 1s;
+}
+#css{
+    z-index: 3;
+    width: 10%;
+    position:absolute;
+    left: 65%;
+    top: 0%;
+    opacity: 0%;    
+    transition: 1s;
+}
+#html{
+    z-index: 3;
+    width: 12%;
+    position:absolute;
+    left: 59%;
+    top: 70%;
+    opacity: 0%;    
+    transition: 1s;
+}
+#js{
+    z-index: 3;
+    width: 5%;
+    position:absolute;
+    left: 62%;
+    top: 46%;
+    opacity: 0%;    
+    transition: 1s;
+}
+#keras{
+    z-index: 3;
+    width: 10%;
+    position:absolute;
+    left: 35%;
+    top: 4%;
+    opacity: 0%;    
+    transition: 1s;
+}
+#matplotlib{
+    z-index: 3;
+    width: 13%;
+    position:absolute;
+    left: 40%;
+    top: 70%;
+    opacity: 0%;    
+    transition: 1s;
+}
+#numpy{
+    z-index: 3;
+    width: 8%;
+    position:absolute;
+    left: 40%;
+    top: 27%;
+    opacity: 0%;    
+    transition: 1s;
+}
+#pandas{
+    z-index: 3;
+    width: 10%;
+    position:absolute;
+    left: 30%;
+    top: 60%;
+    opacity: 0%;    
+    transition: 1s;
+}
+#pygame{
+    z-index: 3;
+    width: 9%;
+    position:absolute;
+    left: 27%;
+    top: 41%;
+    opacity: 0%;    
+    transition: 1s;
+}
+#pyqt{
+    z-index: 3;
+    width: 13%;
+    position:absolute;
+    left: 20%;
+    top: 12%;
+    opacity: 0%;    
+    transition: 1s;
+}
+#sqlite{
+    z-index: 3;
+    width: 6%;
+    position:absolute;
+    left: 40%;
+    top: 52%;
+    opacity: 0%;    
+    transition: 1s;
+}
+#tensorflow{
+    z-index: 3;
+    width: 15%;
+    position:absolute;
+    left: 13%;
+    top: 60%;
+    opacity: 0%;    
+    transition: 1s;
+}
+
+#insta{
+    z-index: 6;
+    width: 2%;
+    position: absolute;
+    cursor: pointer;
+    top: 78%;
+    left:22.3%;
+    opacity: 0%;
+    transition: 1s;
+}
+#Github{
+    z-index: 6;
+    width: 3%;
+    position: absolute;
+    cursor: pointer;
+    top: 62%;
+    left:22.3%;
+    opacity: 0%;
+    transition: 1s;
+}
+
+
+
+/*-----------------ANIMATIONS------------------------------------------------------------------*/
+
+@keyframes fade{
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+@keyframes fadeout{
+    0% {opacity: 100%;}
+    100% {opacity: 0%;}
+}
+
+@keyframes glaze{
+    0% {transform: scale(1.5);}
+    50% {transform: scale(1.45);}
+    100% {transform: scale(1.5);}
+}
+
+@keyframes glaze-About{
+    0% {left: 45%; top: 11.5%;}
+    100% {left: 77%; top: -15%; transform: scale(1.5);}
+}
+
+@keyframes glaze-About-reverse{
+    100% {left: 45%; top: 11.5%;transform: scale(1.5);}
+    0% {left: 77%; top: -15%; transform: scale(1.5);}
+}
+
+@keyframes glaze-Skills{
+    0% {left: 45%; top: 11.5%;}
+    100% {left: 77%; top: 16%; transform: scale(1.5);}
+}
+
+@keyframes moon-About{
+    0% {left: 48%; top: 16.5%; transform: scale(1);}
+    50% {transform: scale(0.9);}
+    100% {left: 80%; top: -10%; transform: scale(1);}
+}
+
+@keyframes moon-About-reverse{
+    100% {left: 48%; top: 16.5%; transform: scale(1);}
+    50% {transform: scale(0.9);}
+    0% {left: 80%; top: -10%; transform: scale(1);}
+}
+
+@keyframes moon-Skills{
+    0% {left: 48%; top: 16.5%; transform: scale(1);}
+    50% {transform: scale(0.9);}
+    100% {left: 80%; top: 20%; transform: scale(1);}
+}
+
+@keyframes glaze-Skills-reverse{
+    100% {left: 45%; top: 11.5%;}
+    0% {left: 77%; top: 16%; transform: scale(1.5);}
+}
+
+@keyframes moon-Skills-reverse{
+    100% {left: 48%; top: 16.5%; transform: scale(1);}
+    50% {transform: scale(0.9);}
+    0% {left: 80%; top: 20%; transform: scale(1);}
+}
+
+@keyframes moon-Projects{
+    0% {left: 48%; top: 16.5%; transform: scale(1);}
+    50% {transform: scale(0.9);}
+    100% {left: 60%; top: 76%; transform: scale(1);}
+}
+
+@keyframes glaze-Projects{
+    0% {left: 45%; top: 11.5%;}
+    100% {left: 57%; top: 71%; transform: scale(1.5);}
+}
+
+@keyframes moon-Projects-reverse{
+    100% {left: 48%; top: 16.5%; transform: scale(1);}
+    50% {transform: scale(0.9);}
+    0% {left: 60%; top: 76%; transform: scale(1);}
+}
+
+@keyframes glaze-Projects-reverse{
+    100% {left: 45%; top: 11.5%;}
+    0% {left: 57%; top: 71%; transform: scale(1.5);}
+}
+
+@keyframes name_min_appear{
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+@keyframes name_min_dissapear{
+    100% {opacity: 0%;}
+    0% {opacity: 100%;}
+}
+
+@keyframes moon-About-Skills{
+    0% {left: 80%; top: 20%; transform: scale(1);}
+    50% {transform: scale(0.9);}
+    100% {left: 80%; top: -10%; transform: scale(1);}
+}
+
+@keyframes moon-About-Skills-reverse{
+    100% {left: 80%; top: 20%; transform: scale(1);}
+    50% {transform: scale(0.9);}
+    0% {left: 80%; top: -10%; transform: scale(1);}
+}
+
+@keyframes glaze-About-Skills{
+    0% {left: 77%; top: 16%; transform: scale(1.5);}
+    100% {left: 77%; top: -15%; transform: scale(1.5);}
+}
+
+@keyframes glaze-About-Skills-reverse{
+    100% {left: 80%; top: 20%; transform: scale(1.5);}
+    0% {left: 77%; top: -15%; transform: scale(1.5);}
+}
+
+@keyframes moon-About-Projects{
+    0% {left: 60%; top: 76%; transform: scale(1);}
+    50% {transform: scale(0.9);}
+    100% {left: 80%; top: -10%; transform: scale(1);}
+}
+
+@keyframes moon-About-Projects-reverse{
+    100% {left: 60%; top: 76%; transform: scale(1);}
+    50% {transform: scale(0.9);}
+    0% {left: 80%; top: -10%; transform: scale(1);}
+}
+
+@keyframes glaze-About-Projects{
+    0% {left: 57%; top: 71%; transform: scale(1.5);}
+    100% {left: 77%; top: -15%; transform: scale(1.5);}
+}
+
+@keyframes glaze-About-Projects-reverse{
+    100% {left: 57%; top: 71%; transform: scale(1.5);}
+    0% {left: 77%; top: -15%; transform: scale(1.5);}
+}
+/*========================================================================================*/
+
+@keyframes moon-Skills-About{
+    0% {left: 80%; top: -10%; transform: scale(1);}
+    50% {transform: scale(0.9);}
+    100% {left: 80%; top: 20%; transform: scale(1);}
+}
+
+@keyframes moon-Skills-About-reverse{
+    100% {left: 80%; top: -10%; transform: scale(1);}
+    50% {transform: scale(0.9);}
+    0% {left: 80%; top: 20%; transform: scale(1);}
+}
+
+@keyframes glaze-Skills-About{
+    0% {left: 77%; top: -15%; transform: scale(1.5);}
+    100% {left: 77%; top: 16%; transform: scale(1.5);}
+}
+
+@keyframes glaze-Skills-About-reverse{
+    100% {left: 77%; top: 16%; transform: scale(1.5);}
+    0% {left: 77%; top: -15%; transform: scale(1.5);}
+}
+
+/*========================================================================================*/
+
+@keyframes moon-Skills-Projects{
+    0% {left: 60%; top: 76%; transform: scale(1);}
+    50% {transform: scale(0.9);}
+    100% {left: 80%; top: 20%; transform: scale(1);}
+}
+
+@keyframes moon-Skills-Projects-reverse{
+    100% {left: 60%; top: 76%; transform: scale(1);}
+    50% {transform: scale(0.9);}
+    0% {left: 80%; top: 20%; transform: scale(1);}
+}
+
+@keyframes glaze-Skills-Projects{
+    0% {left: 57%; top: 71%; transform: scale(1.5);}
+    100% {left: 77%; top: 16%; transform: scale(1.5);}
+}
+
+@keyframes glaze-Skills-Projects-reverse{
+    100% {left: 57%; top: 71%; transform: scale(1.5);}
+    0% {left: 77%; top: -15%; transform: scale(1.5);}
+}
+
+/*========================================================================================*/
+
+@keyframes moon-Projects-About{
+    0% {left: 81%; top: -13%; transform: scale(1);}
+    50% {transform: scale(0.9);}
+    100% {left: 60%; top: 76%; transform: scale(1);}
+}
+
+@keyframes moon-Projects-About-reverse{
+    100% {left: 60%; top: 76%; transform: scale(1);}
+    50% {transform: scale(0.9);}
+    0% {left: 77%; top: -15%; transform: scale(1.5);}
+}
+
+@keyframes glaze-Projects-About{
+    0% {left: 77%; top: -15%; transform: scale(1.5);}
+    100% {left: 57%; top: 71%; transform: scale(1.5);}
+}
+
+@keyframes glaze-Projects-About-reverse{
+    100% {left: 57%; top: 71%; transform: scale(1.5);}
+    0% {left: 77%; top: -15%; transform: scale(1.5);}
+}
+
+/*========================================================================================*/
+
+@keyframes moon-Projects-Skills{
+    0% {left: 80%; top: 20%; transform: scale(1);}
+    50% {transform: scale(0.9);}
+    100% {left: 60%; top: 76%; transform: scale(1);}
+}
+
+@keyframes moon-Projects-Skills-reverse{
+    100% {left: 60%; top: 76%; transform: scale(1);}
+    50% {transform: scale(0.9);}
+    0% {left: 80%; top: 20%; transform: scale(1);}
+}
+
+@keyframes glaze-Projects-Skills{
+    0% {left: 77%; top: 16%; transform: scale(1.5);}
+    100% {left: 57%; top: 71%; transform: scale(1.5);}
+}
+
+@keyframes glaze-Projects-Skills-reverse{
+    100% {left: 77%; top: 16%; transform: scale(1.5);}
+    0% {left: 77%; top: -15%; transform: scale(1.5);}
+}
+
+@keyframes minin{
+    0% {opacity: 0%; left:-2%;}
+    100% {opacity: 100%;left:1%;}
+}
+
+@keyframes minout{
+    100% {opacity: 0%; left:-2%;}
+    0% {opacity: 100%;left:1%;}
+}
+
+@keyframes aboutmein{
+    0% {opacity: 0%; left:10%;}
+    100% {opacity: 100%;left:15%;}
+}
+
+@keyframes aboutmeout{
+    100% {opacity: 0%; left:10%;}
+    0% {opacity: 100%;left:15%;}
+}
+
+@keyframes progressin{
+    0% {opacity: 0%; left:17%;}
+    100% {opacity: 100%;left:22.5%;}
+}
+
+@keyframes progressout{
+    100% {opacity: 0%; left:17%;}
+    0% {opacity: 100%;left:22.5%;}
+}
+
+@keyframes skillsin{
+    0% {opacity: 0%; transform:  scale(0.5);}
+    100% {opacity: 90%; transform: scale(1);}
+}
+
+@keyframes skillsout{
+    100% {opacity: 0%; transform:  scale(0.5);}
+    0% {opacity: 90%; transform: scale(1);}
+}
+
+@keyframes instain{
+    0% {opacity: 0%; left:17%;}
+    100% {opacity: 90%; left:22.3%;}
+}
+@keyframes instaout{
+    100% {opacity: 0%; left:17%;}
+    0% {opacity: 90%; left:22.3%;}
+}
